@@ -1,0 +1,72 @@
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class UAS1B {
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getUsername() {
+        return Username;
+    }
+
+    public void setUsername(String username) {
+        Username = username;
+    }
+
+    public String getNama() {
+        return Nama;
+    }
+
+    public void setNama(String nama) {
+        Nama = nama;
+    }
+
+    public String getPosted() {
+        return Posted;
+    }
+
+    public void setPosted(String posted) {
+        Posted = posted;
+    }
+
+    private String ID;
+    private String Username;
+    private String Nama;
+    private String Posted;
+
+    public UAS1B(){
+
+    }
+
+    private String ShowNuberOfPost(){
+        return ShowNuberOfPost();
+
+    }
+
+    public static void main(String[] args) {
+        int jumpost = 7;
+        Scanner sc = new Scanner(System.in);
+        UAS1B user1 = new UAS1B();
+        user1.setID("011");
+        user1.setUsername("rjnta5");
+        user1.setNama("rujinta cenglu");
+        ArrayList<String> myPost = new ArrayList<>();
+        for(int index=0; index<jumpost;index++){
+            myPost.add(sc.nextLine());
+        }
+        user1.setPosted("myPost");
+        System.out.println("Total Post : " + user1.ShowNuberOfPost());
+
+
+
+    }
+
+
+}
+
